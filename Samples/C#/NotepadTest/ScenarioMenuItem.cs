@@ -13,7 +13,7 @@
 // THE SOFTWARE.
 //
 //******************************************************************************
-
+/*
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace NotepadTest
@@ -58,3 +58,4 @@ namespace NotepadTest
         }
     }
 }
+*/

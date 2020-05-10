@@ -1,28 +1,12 @@
-﻿//******************************************************************************
-//
-// Copyright (c) 2017 Microsoft Corporation. All rights reserved.
-//
-// This code is licensed under the MIT License (MIT).
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
-//
-//******************************************************************************
-/*
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using System.Threading;
 using System;
 
 namespace NotepadTest
 {
-    [TestClass]
-    public class ScenarioEditor : NotepadSession
+    [TestClass] 
+    public class TestMp3 : NotepadSession
     {
         [TestMethod]
         public void EditorEnterText()
@@ -30,10 +14,10 @@ namespace NotepadTest
             // Type mixed text and apply shift modifier to 7890_ to generate corresponding symbols
             Thread.Sleep(TimeSpan.FromSeconds(2));
             editBox.SendKeys("abcdeABCDE 12345" + Keys.Shift + "7890-" + Keys.Shift + @"!@#$%");
-            Assert.AreEqual(@"abcdeABCDE 12345&*()_!@#$%", editBox.Text);
+            //Assert.AreEqual(@"abcdeABCDE 12345&*()_!@#$%", editBox.Text);
         }
 
-        [TestMethod]
+       /* [TestMethod]
         public void EditorKeyboardShortcut()
         {
             // Type a known text sequence, select, copy, and paste it three times
@@ -51,7 +35,7 @@ namespace NotepadTest
             Assert.AreEqual(string.Empty, editBox.Text);
             editBox.SendKeys(Keys.F5);
             Assert.AreNotEqual(string.Empty, editBox.Text);
-        }
+        }*/
 
         [ClassInitialize]
         public static void ClassInitialize(TestContext context)
@@ -64,6 +48,12 @@ namespace NotepadTest
         {
             TearDown();
         }
+
+
+
+
+
+
+
     }
 }
-*/

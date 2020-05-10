@@ -43,7 +43,8 @@ namespace NotepadTest
                 Assert.IsNotNull(session.SessionId);
 
                 // Verify that Notepad is started with untitled new file
-                Assert.AreEqual("Untitled - Notepad", session.Title);
+                //Assert.AreEqual("Untitled - Notepad", session.Title);
+                Assert.AreEqual("Unbenannt - Editor", session.Title);
 
                 // Set implicit timeout to 1.5 seconds to make element search to retry every 500 ms for at most three times
                 session.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1.5);
@@ -64,7 +65,8 @@ namespace NotepadTest
                 try
                 {
                     // Dismiss Save dialog if it is blocking the exit
-                    session.FindElementByName("Don't Save").Click();
+                    //session.FindElementByName("Don't Save").Click();
+                    session.FindElementByName("Nicht speichern").Click();
                 }
                 catch { }
 
@@ -72,7 +74,7 @@ namespace NotepadTest
                 session = null;
             }
         }
-
+        /*
         [TestInitialize]
         public void TestInitialize()
         {
@@ -83,5 +85,6 @@ namespace NotepadTest
         }
 
         protected static string SanitizeBackslashes(string input) => input.Replace("\\", Keys.Alt + Keys.NumberPad9 + Keys.NumberPad2 + Keys.Alt);
+    }*/
     }
 }

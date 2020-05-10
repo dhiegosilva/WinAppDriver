@@ -79,6 +79,7 @@
     <Compile Include="ScenarioMenuItem.cs" />
     <Compile Include="ScenarioEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestMp3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -13,7 +13,7 @@
 // THE SOFTWARE.
 //
 //******************************************************************************
-
+/*
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Remote;
@@ -103,3 +103,4 @@ namespace NotepadTest
         }
     }
 }
+*/
